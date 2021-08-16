@@ -29,7 +29,7 @@ public class ClienteService {
 				));
 	}
 	
-	public Cliente update(Cliente obj) throws ObjectNotFoundException {
+	public Cliente update(Cliente obj) throws ObjectNotFoundException  {
 		Cliente newObj = find(obj.getId());
 		UpdateData(newObj, obj);
 		return repo.save(newObj);
